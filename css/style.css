@@ -1,0 +1,47 @@
+#Quiz,#finish{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-image: url(../images/Wave-100s-1366px\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 3rem 0;
+    height: 100vh;
+}
+
+.Table{
+    width: 50%;
+    /* height: 80%; */
+    background-color: white;
+    margin: auto;
+}
+.text-sepc{
+    color: #653383
+}
+.text-bg{
+    background-color:#653383 ;
+    color: white;
+}
+button{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1023px){
+    .Table{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        padding:1rem;
+    }
+    .Table{
+        width: 90%;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz APP</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="Setting">
+
+        <div class="Table shadow-lg overflow-auto ">
+            <h1 class="text-center text-sepc  py-5  border-bottom">Setting Quiz</h1>
+            <div class="p-4">
+                <div class="mb-3 ">
+                    <label for="category" class="text-sepc pb-3">Category</label>
+                    <select name="category" id="category" class="form-control">
+                        <option value="9">General Knowledge</option>
+                        <option value="18">Science Computer</option>
+                        <option value="21">Sports</option>
+                        <option value="25">Art</option>
+                        <option value="27">Animals</option>
+                        <option value="23">History</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="diffculty" class="text-sepc pb-3">Diffuclity</label>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="diffculty" id="easy" value="easy" class="form-check-input"
+                                checked> Easy
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="diffculty" id="medium" value="medium"
+                                class="form-check-input">Medium
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="diffculty" id="hard" value="hard" class="form-check-input">Hard
+
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <input type="number" name="" id="noOfQuestions" placeholder="Number Of Questions"
+                        class="form-control" required>
+                </div>
+
+                <button class=" btn text-bg p-2 float-end my-3 " id="startBtn">Start</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Quiz">
+        <div class="Table shadow-lg overflow-auto">
+
+            <div class="p-3  border-bottom overflow-auto">
+                <h1 class="text-center text-sepc  py-5 ">Quiz</h1>
+                <div class="float-end text-bg rounded-3 text-white p-2 d-inline-block ">
+                    <span id="currentQuestion"></span> Of
+                    <span id="NoOfQuestion"></span> Questions
+                </div>
+                <div class="clearFix"></div>
+            </div>
+
+            <div class="p-3 text-sepc">
+                <h4 class="d-inline">Q : </h4>
+                <h4 id="Question" class="d-inline"></h4>
+                <div id="rowOfAnswers">
+                    
+                </div>
+                <button class="btn text-bg p-2 float-end my-3 " id="submitBtn">Submit</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="finish">
+        <div class="Table shadow-lg overflow-auto">
+            <h1 class="text-center text-sepc border-bottom  py-5 ">Finish</h1>
+
+            <div class="p-3 text-sepc">
+                <h4 class="text-sepc text-center">Score</h4>
+                <h4 id="score" class="text-center"> </h4>
+
+                <button class="btn text-bg p-2 float-end my-3 " id="again">Try Again</button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+
+</body>
+
+</html>
